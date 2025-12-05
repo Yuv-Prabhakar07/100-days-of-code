@@ -1,14 +1,17 @@
-//Q29: Write a program to calculate the factorial of a number.
+//Write a program to calculate the factorial of a number.
 
-#include <stdio.h>
-
+#include<stdio.h>
 int main() {
     int n;
-    int product=1;
-    scanf("%d",&n);
-    for (int i = 1; i <= n; i++ ) {
-        product *= i;
-    }
-    printf("%d",product);
-    return 0;
+    printf("Enter a number : ");
+    scanf("%d", &n);
+
+for(int i=n-1; i>0; i--){
+    n = n * i;
+
+}
+    printf(" The factorial is %d", n);
+
+return 0;
+
 }
